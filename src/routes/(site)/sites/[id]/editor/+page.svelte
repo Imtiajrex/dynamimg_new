@@ -33,6 +33,6 @@
 	<Tools />
 </div>
 <div class="relative w-full h-full  p-2" style="height:92vh;">
-	<Canvas />
+	<!-- <Canvas /> -->
 	<ToolsDrawer />
 </div>
