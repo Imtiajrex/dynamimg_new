@@ -1,0 +1,37 @@
+/* Write your global styles here, in PostCSS syntax */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+	font-family: 'Comfortaa', cursive;
+}
+ol,
+ul {
+	list-style: revert;
+	margin: revert;
+	padding: revert;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: revert;
+	font-weight: revert;
+}
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
