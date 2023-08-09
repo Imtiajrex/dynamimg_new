@@ -77,7 +77,7 @@ const elementsMap = {
 const usedIds = [] as string[];
 type getUsedIdContextType = () => { get: () => string[] };
 export const getUsedIds: getUsedIdContextType = () => getContext('used-ids');
-export const getElements = () => getContext('elements');
+export const getElements = (): elementsType => getContext('elements');
 export const setElements = () => {
 	setContext('elements', elements);
 	setContext('used-ids', {

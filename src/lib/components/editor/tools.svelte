@@ -20,7 +20,6 @@
 	import type { deviceSizeType } from '../types/editor/deviceSizeType';
 	import type { toolType } from '../types/editor/toolType';
 	import ToolButton from './tool-button.svelte';
-	import { attr } from 'svelte/internal';
 	import { arrayEquals } from '$lib/utils/array';
 
 	let activeTool = getContext('active-tool-drawer') as Writable<toolType>;

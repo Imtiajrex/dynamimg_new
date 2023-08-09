@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^1.0.6",
 		"@tabler/icons-svelte": "^2.2.0",
 		"daisyui": "^2.50.0",
 		"lodash": "^4.17.21",

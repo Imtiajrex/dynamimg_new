@@ -42,7 +42,7 @@
 	let editor: HTMLTextAreaElement;
 	let canvas: HTMLElement;
 	let canvasRect: DOMRect;
-	let isCtrlPressed = getContext('is-ctrl-pressed') as any;
+	let isCtrlPressed = getContext('is-ctrl-pressed') as Writable<boolean>;
 	onMount(() => {
 		editor = document.getElementById(`textarea_${id}`) as HTMLTextAreaElement;
 		canvas = document.getElementById(`canvas`) as HTMLElement;
@@ -144,7 +144,7 @@
 		if (active) {
 			edit = true;
 		}
-		if (isCtrlPressed.get()) {
+		if ($isCtrlPressed) {
 			$selectedElement = [...$selectedElement, id];
 		} else {
 			$selectedElement = [id];
